@@ -1,8 +1,11 @@
 import random
 def main_code():
-    operator = question = []
-    answer = statement = ""
-    difficulty = result = 0
+    operator = []
+    question = []
+    answer = ""
+    statement = ""
+    difficulty = 0
+    result = 0
     inptType = ""
     def error():
         print("\n----------Error in input. Please retry.----------\n\n==================================================\n")
@@ -58,7 +61,7 @@ def main_code():
     if inpt == answer:
         print("Correct!")
     else:
-        print("Oh no! Wrong answer. \nRight answer is",answer,"\n")
+        print("Oh no! Wrong answer. \nRight answer is",answer,"\nTry again!\n")
         main_code()
 print("\n==================================================\n\nMissing Operator Game - Find the missing operator!\n")
 main_code()
